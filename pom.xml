@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.argoproj.workflow</groupId>
+    <groupId>com.fluence.argoproj.workflow</groupId>
     <artifactId>argo-client-java</artifactId>
     <packaging>jar</packaging>
     <name>argo-client-java</name>
@@ -278,4 +278,17 @@
         <junit-version>4.13</junit-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>Fluence Artifactory-releases</name>
+            <url>https://fluence.jfrog.io/artifactory/fluence-maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Fluence Artifactory-snapshots</name>
+            <url>https://fluence.jfrog.io/artifactory/fluence-maven</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
